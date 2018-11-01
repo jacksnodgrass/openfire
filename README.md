@@ -87,7 +87,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull openfire-credija:{version}
+  docker pull credija/openfire:{version}
   ```
 
   2. Stop the currently running image:
@@ -107,7 +107,7 @@ To upgrade to newer releases:
   ```bash
   docker run -name openfire -d \
     [OPTIONS] \
-    openfire-credija:{version}
+    credija/openfire:{version}
   ```
 
 ## Shell Access
