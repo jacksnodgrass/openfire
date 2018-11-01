@@ -1,0 +1,14 @@
+version: '2'
+services:
+  openfire:
+    image: credija/openfire:4.2.3
+    ports:
+      - "9090:9090/tcp"
+      - "9091:9091/tcp"
+      - "5222:5222/tcp"
+      - "7777:7777/tcp"
+      - "7070:7070/tcp"
+      - "7443:7443/tcp"
+    volumes:
+      - /srv/docker/openfire/data:/var/lib/openfire
+      - /srv/docker/openfire/logs:/var/log/openfire
