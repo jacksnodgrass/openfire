@@ -105,7 +105,7 @@ To upgrade to newer releases:
   4. Start the updated image
 
   ```bash
-  docker run -name openfire -d \
+  docker run -name openfire-credija -d \
     [OPTIONS] \
     credija/openfire:{version}
   ```
@@ -115,7 +115,7 @@ To upgrade to newer releases:
 For debugging and maintenance purposes you may want access the containers shell. If you are using Docker version `1.3.0` or higher you can access a running containers shell by starting `bash` using `docker exec`:
 
 ```bash
-docker exec -it openfire bash
+docker exec -it openfire-credija bash
 ```
 
 # References
