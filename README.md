@@ -1,8 +1,7 @@
-# Credija - Openfire Container Based on OpenJDK 8
+# Openfire Container Based on OpenJDK 8
 
 - [Introduction](#introduction)
 - [Getting started](#getting-started)
-  - [Installation](#installation)
   - [Quickstart](#quickstart)
   - [Persistence](#persistence)
   - [Logs](#logs)
@@ -31,7 +30,8 @@ Start Openfire using:
 
 ```bash
 docker run --name openfire-credija -d --restart=always \
-  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 --publish 7070:7070 --publish 7443:7443 \
+  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
+  --publish 7070:7070 --publish 7443:7443 \
   --volume /opt/your-persistent-folder:/var/lib/openfire \
   -m 2GB \
   credija/openfire:lts \
