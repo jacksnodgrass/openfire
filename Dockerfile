@@ -9,7 +9,7 @@ ENV OPENFIRE_VERSION=4.3.2 \
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y sudo \
  && echo "Downloading openfire_${OPENFIRE_VERSION}_all.deb ..." \
- && wget --no-verbose "https://www.igniterealtime.org/downloads/download-landing.jsp?file=openfire/openfire_${OPENFIRE_VERSION}_all.deb" -O /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
+ && wget --no-verbose "https://www.igniterealtime.org/downloads/download-landing.jsp?file=openfire/openfire_4.3.2_all.deb" -O /tmp/openfire_4.3.2_all.deb \
  && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && mv /var/lib/openfire/plugins/admin /usr/share/openfire/plugin-admin \
  && rm -rf openfire_${OPENFIRE_VERSION}_all.deb \
