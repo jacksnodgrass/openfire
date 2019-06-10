@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk
 MAINTAINER kevinfaveridev@gmail.com
 
-ENV OPENFIRE_VERSION=4.2.3 \
+ENV OPENFIRE_VERSION=4.3.2 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
