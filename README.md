@@ -1,4 +1,10 @@
-# This image is not supported anymore. As an alternative you can use: https://github.com/sameersbn/docker-openfire
+# This image was forked from credija/openfire
+
+# credija decided that they didn't want to suport it any more and suggested going to an oldver version... I wanted to go forward and not back so here goes...
+
+# This is a work in progress....
+
+
 
 # Openfire Container Based on OpenJDK 8
 
