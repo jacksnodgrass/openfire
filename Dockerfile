@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-MAINTAINER kevinfaveridev@gmail.com
+MAINTAINER jack@mylinuxguy.net
 
 ENV OPENFIRE_VERSION=4.3.2 \
     OPENFIRE_USER=openfire \
@@ -7,9 +7,9 @@ ENV OPENFIRE_VERSION=4.3.2 \
     OPENFIRE_LOG_DIR=/var/log/openfire
 
 RUN apt-get update \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y sudo \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y telnet nano sudo default-jre-headless \
  && echo "Downloading openfire_${OPENFIRE_VERSION}_all.deb ..." \
- && wget --no-verbose "https://www.igniterealtime.org/downloads/download-landing.jsp?file=openfire/openfire_4.3.2_all.deb" -O /tmp/openfire_4.3.2_all.deb \
+ && wget --no-verbose "https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_${OPENFIRE_VERSION}_all.deb" -O /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && mv /var/lib/openfire/plugins/admin /usr/share/openfire/plugin-admin \
  && rm -rf openfire_${OPENFIRE_VERSION}_all.deb \
