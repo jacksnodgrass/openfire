@@ -1,7 +1,8 @@
 version: '2'
 services:
   openfire:
-    image: credija/openfire:lts
+    #image: credija/openfire:lts
+    build: .
     ports:
       - "9090:9090/tcp"
       - "9091:9091/tcp"
