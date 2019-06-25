@@ -67,6 +67,7 @@ if [[ -z ${1} ]]; then
     -server \
     -DopenfireHome=/usr/share/openfire \
     -Dopenfire.lib.dir=/usr/share/openfire/lib \
+    -Dlog4j.configurationFile=${OPENFIRE_DATA_DIR}/conf/log4j2.xml \
     -classpath /usr/share/openfire/lib/startup.jar \
     -jar /usr/share/openfire/lib/startup.jar ${EXTRA_ARGS}
 else
