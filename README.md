@@ -1,3 +1,5 @@
+# This image is not supported anymore. As an alternative you can use: https://github.com/sameersbn/docker-openfire
+
 # Openfire Container Based on OpenJDK 8
 
 - [Introduction](#introduction)
